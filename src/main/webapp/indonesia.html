@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Indonesia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .banner {
+            background-image: url('https://media.istockphoto.com/photos/flag-of-indonesia-against-blue-sky-picture-id811728284?k=6&m=811728284&s=612x612&w=0&h=-z8zp4VaaS7uDvrdcW6x_JRDRbEScZATpwHGlUL70Cc=');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            position: relative;
+            color: white;
+        }
+        .banner-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section h2 {
+            margin-bottom: 40px;
+        }
+        .destination-item {
+            margin-bottom: 30px;
+        }
+        .destination-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            transition: background 0.5s ease;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .destination-item:hover .destination-overlay {
+            background: rgba(0, 0, 0, 0.9);
+        }
+        .destination-overlay h5 {
+            margin-bottom: 5px;
+        }
+        .destination-overlay span {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <div class="banner-text">
+            <h1>Explore Indonesia</h1>
+            <p>Discover the beauty and diversity of Indonesia</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="container section">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>About Indonesia</h2>
+                <p>Indonesia, a Southeast Asian nation made up of thousands of volcanic islands, is home to hundreds of ethnic groups speaking many different languages. It’s known for its beaches, volcanoes, Komodo dragons, and jungles sheltering elephants, orangutans, and tigers. On the island of Java lies Indonesia's vibrant, sprawling capital, Jakarta, and the city of Yogyakarta, known for gamelan music and traditional puppetry.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Destinations Section -->
+    <div class="container-fluid section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-item position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/bali.jpg" alt="Bali">
+                        <a class="destination-overlay text-white text-decoration-none" href="#">
+                            <h5 class="text-white">Bali</h5>
+                            <span>Island Paradise</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-item position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/jakarta.jpg" alt="Jakarta">
+                        <a class="destination-overlay text-white text-decoration-none" href="#">
+                            <h5 class="text-white">Jakarta</h5>
+                            <span>Vibrant Capital City</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-item position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/yogyakarta.jpg" alt="Yogyakarta">
+                        <a class="destination-overlay text-white text-decoration-none" href="#">
+                            <h5 class="text-white">Yogyakarta</h5>
+                            <span>Cultural Hub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
